@@ -2,9 +2,9 @@
 
 const Header = () => {
   return (
-    <div>
-      <h1 className="">desde header</h1>
-    </div>
+    <>
+      <h1 className="font-black text-5xl text-center">Seguimiento Pacientes {""}<span className="text-indigo-600">Veterinaria</span></h1>
+    </>
   )
 }
 
