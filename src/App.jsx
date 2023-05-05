@@ -6,28 +6,30 @@ import './App.css'
 
 
 function App() {
-  
-const [pacientes, setPacientes] = useState([]);
+
+  const [pacientes, setPacientes] = useState([]);
 
   return (
-   
-      <div className="container mx-auto mt-20">
-        <Header
-      
 
-        />
+    <div className="container mx-auto mt-20">
+      <Header
 
 
-        <div className='mt-12 md:flex'>
+      />
+
+
+      <div className='mt-12 md:flex'>
         <Formulario
-        setPacientes={setPacientes}
+        pacientes={pacientes}
+          setPacientes={setPacientes}
+          
         />
-        <ListadoPacientes/>
-        </div>
-       
+        <ListadoPacientes />
       </div>
-      
-   
+
+    </div>
+
+
   )
 }
 
