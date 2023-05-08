@@ -9,7 +9,21 @@ const ListadoPacientes = ({pacientes}) => {
       <p className="text-xl mt-5 mt-10 text-center">Administra tus {""}
       <span className="text-indigo-600 font-bold">Pacientes y CItas</span>
       </p>
-      <Paciente/>
+
+
+{ pacientes.map((paciente, index) =>  (
+
+<Paciente
+key={index}
+paciente={paciente}
+/>
+
+)
+
+)}
+      
+
+     
     
      
     </div>
